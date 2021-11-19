@@ -1,0 +1,34 @@
+{
+    "name": "react-code-snippets",
+    "displayName": "react-code-snippets",
+    "publisher": "Swarooprajwal",
+    "repository": "https://github.com/swaroop18122002/react-code-snippets.git",
+    "description": "A simple light weight react snippet library :)",
+    "version": "0.1.0",
+    "engines": {
+        "vscode": "^1.62.0"
+    },
+    "categories": [
+        "Snippets"
+    ],
+    "contributes": {
+        "snippets": [
+            {
+                "language": "javascript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescript",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "javascriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            },
+            {
+                "language": "typescriptreact",
+                "path": "./snippets/snippets.code-snippets"
+            }
+        ]
+    }
+}
