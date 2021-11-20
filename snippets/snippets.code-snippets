@@ -1,0 +1,85 @@
+{
+	"Print string to console": {
+		"prefix": "cls",
+		"body": [
+			"console.log('$0');"
+		],
+		"description": "Log string to console"
+	},
+	"Print to console": {
+		"prefix": "cl",
+		"body": [
+			"console.log($0);"
+		],
+		"description": "Log output to console"
+	},
+	"Event Listener": {
+		"prefix": "el",
+		"body": [
+			"${1:element}.addEventListener('${2:event}', (e) => {$0});"
+		],
+		"description": "makes an event listener for html elements selected using query selectors or any other selectors"
+	},
+	"Event Listener for jsx elements": {
+		"prefix": "oe",
+		"body": [
+			"on${1:Event}={(e) => {$0}}"
+		],
+		"description": "makes an event listener for jsx elements with the event object as an argument"
+	},
+	"Import React, export arrow functional component": {
+		"prefix": "race",
+		"body": [
+			"import React from 'react';\n",
+			"const ${1:${TM_FILENAME_BASE}} = () => {",
+			"\treturn(",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"}",
+			"export default ${1:${TM_FILENAME_BASE}};"
+		],
+		"description": "imports React from react and creates an arrow functional component"
+	},
+	"arrow functional component": {
+		"prefix": "ac",
+		"body": [
+			"const ${1:ComponentName} = () => {",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"}",
+		],
+		"description": "Makes an arrow functional component no export no props"
+	},
+	"arrow functional component accepting props": {
+		"prefix": "acp",
+		"body": [
+			"const ${1:ComponentName} = ({${2:props}}) => {",
+			"\treturn (",
+			"\t\t<>",
+			"\t\t\t$0",
+			"\t\t</>",
+			"\t)",
+			"}",
+		],
+		"description": "Makes an arrow functional component no export which takes props"
+	},
+	"map through an array return jsx": {
+		"prefix": "amir",
+		"body": [
+			"{${1:array}.map(${2:item} => {",
+  		"\treturn(",
+    	"\t\t<${3:element}",
+			"\t\t\tkey={${2}.${4:key}}",
+			"\t\t>",
+      "\t\t\t$0",
+    	"\t\t</$3>",
+  		"\t)",
+			"})}"
+		]
+	}
+}
