@@ -1,5 +1,9 @@
-# react-code-snippets README
+# react-code-snippets
 A snippet library which includes simple daily use snippets
+
+## View on the VS Code marketplace -
+
+https://marketplace.visualstudio.com/items?itemName=Swarooprajwal.react-code-snippets
 
 ## Languages supported
 
